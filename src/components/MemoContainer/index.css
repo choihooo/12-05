@@ -1,0 +1,41 @@
+.MemoContainer {
+  flex: 1;
+  padding: 20px; /* 여기 바뀜 */
+}
+
+.MemoContainer__title {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 2rem;
+
+  /* 여기 바뀜 */
+  border: none;
+  margin-bottom: 10px;
+  outline: none;
+}
+.MemoContainer__content {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  min-height: 600px;
+
+  /* 여기 바뀜 */
+  border: none;
+  outline: none;
+}
+
+.MemoContainer__empty {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MemoContainer__empty > h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}

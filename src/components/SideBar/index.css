@@ -1,0 +1,54 @@
+.SideBar {
+  background-color: #f0f0f0;
+  transition: width 0.3s ease;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.SideBar.open {
+  width: 200px;
+}
+
+.SideBar.closed {
+  width: 40px;
+}
+
+.sidebar-resize-handle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  cursor: col-resize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.resize-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #999;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+}
+
+.sidebar-toggle-collapsed {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  padding: 8px;
+  font-weight: bold;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.sidebar-toggle-collapsed:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}

@@ -1,0 +1,27 @@
+.MemoItem {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 5px 8px;
+  position: relative;
+  box-sizing: border-box;
+}
+.MemoItem.selected {
+  background-color: #e0e0e0; /* 여기 바뀜 */
+  font-weight: bold;
+}
+.MemoItem__delete-button {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background: none;
+  color: red;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+/* hover 했을 때만 x버튼 보이도록 수정 */
+.MemoItem:hover .MemoItem__delete-button {
+  display: inline-block;
+}
